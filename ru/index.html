@@ -1,0 +1,616 @@
+<!doctype html>
+<html class="h-100" dir="ltr" lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Страница пожертвований</title>
+  <meta name="description" content=""/>
+
+  <!-- dns-prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+  <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net"/>
+  <!-- / dns-prefetch -->
+
+  <!-- styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&amp;subset=cyrillic"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code:400,700&amp;subset=cyrillic"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn-storage.github.io/styles/bootstrap/theme.css"/>
+  <link rel="stylesheet" href="/assets/css/theme.min.css"/>
+  <!-- / styles -->
+
+  <!-- locale -->
+  <link rel="alternate" hreflang="en" href="/en/"/>
+  <link rel="alternate" hreflang="ru" href="/ru/"/>
+  <!-- / locale -->
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+<div class="py-3 py-md-5 flex-shrink-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-bank">
+          <div class="card-body">
+            <h5 class="card-title">Банковский счёт</h5>
+            <p class="card-text">
+              Прямой перевод средств на банковский счёт.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-card">
+          <div class="card-body">
+            <h5 class="card-title">Банковская карта</h5>
+            <p class="card-text">
+              Перевод при помощи номера банковской карты.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-yandex">
+          <div class="card-body">
+            <h5 class="card-title">Яндекс.Деньги</h5>
+            <p class="card-text">
+              Российский сервис электронных платежей.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-paypal">
+          <div class="card-body">
+            <h5 class="card-title">PayPal</h5>
+            <p class="card-text">
+              Крупнейшая дебетовая электронная платёжная система.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-liberapay">
+          <div class="card-body">
+            <h5 class="card-title">Liberapay</h5>
+            <p class="card-text">
+              Открытая некоммерческая платформа для периодических пожертвований.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-patreon">
+          <div class="card-body">
+            <h5 class="card-title">Patreon</h5>
+            <p class="card-text">
+              Закрытая коммерческая платформа для периодических пожертвований.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-bitcoin">
+          <div class="card-body">
+            <h5 class="card-title">Bitcoin</h5>
+            <p class="card-text">
+              Пиринговая платёжная система, использующая одноимённую единицу для учёта операций.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-ethereum">
+          <div class="card-body">
+            <h5 class="card-title">Ethereum</h5>
+            <p class="card-text">
+              Платформа для создания децентрализованных онлайн-сервисов на базе блокчейна, работающих на базе умных контрактов.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg mb-4">
+        <div class="card" data-toggle="modal" data-target="#modal-monero">
+          <div class="card-body">
+            <h5 class="card-title">Monero</h5>
+            <p class="card-text">
+              Криптовалюта на основе протокола CryptoNote, ориентированная на повышенную конфиденциальность транзакций.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-auto">
+  <div class="footer bg-light text-center text-muted small mt-auto py-4">
+    <div class="container">
+      <div class="ext-cr">
+        <i class="fas fa-code"></i>
+        <i class="fas fa-heart" style="color:#fe6e3a;"></i>
+        <a title="z1729 Web Factory" href="https://z1729.com/" target="_blank" rel="nofollow"><i class="fas fa-taxi"></i></a>
+        &bull;
+        <a href="/en/" hreflang="en">EN</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- modal-bank -->
+<div id="modal-bank" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Банковский счёт</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">Получатель</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-beneficiary-name" class="form-control" type="text" value="Дунаев Юрий Александрович" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-beneficiary-name">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Счет получателя</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-beneficiary-account" class="form-control" type="text" value="40817810200030909058" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-beneficiary-account">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Банк получателя</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-name" class="form-control" type="text" value='ПАО АКБ "АВАНГАРД"' readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-name">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">ИНН</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-itn" class="form-control" type="text" value="7702021163" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-itn">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">БИК</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-bic" class="form-control" type="text" value="044525201" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-bic">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Корреспондентский счет</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-corr-account" class="form-control" type="text" value="30101810000000000201" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-corr-account">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Адрес банка получателя</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-address" class="form-control" type="text" value="115035, г.Москва, Садовническая ул., д.12, стр. 1" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-address">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Назначение платежа</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="bank-payment-target" class="form-control" type="text" value="Благодарность за помощь в развитии сообществ" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bank-payment-target">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-bank -->
+
+<!-- modal-card -->
+<div id="modal-card" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Банковская карта</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">Сбербанк</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="card-number-sberbank" class="form-control" type="text" value="0000 0000 0000 0000" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#card-number-sberbank">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Альфа-Банк</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="card-number-alfabank" class="form-control" type="text" value="0000 0000 0000 0000" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#card-number-alfabank">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Банк АВАНГАРД</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input id="card-number-avangard" class="form-control" type="text" value="0000 0000 0000 0000" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#card-number-avangard">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-card -->
+
+<!-- modal-yandex -->
+<div id="modal-yandex" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Яндекс.Деньги</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">Юрий Дунаев</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="4100110453455255" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success" href="https://money.yandex.ru/to/4100110453455255" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-yandex -->
+
+<!-- modal-paypal -->
+<div id="modal-paypal" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">PayPal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">Юрий Дунаев</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="x06174" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success" href="https://paypal.me/x06174" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-paypal -->
+
+<!-- modal-liberapay -->
+<div id="modal-liberapay" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Liberapay</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">z1729 Factory</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="z1729" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success" href="https://en.liberapay.com/z1729/donate" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">MARKETPLACE</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="marketplace" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success" href="https://en.liberapay.com/marketplace/donate" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Package Store</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="pkgstore" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success" href="https://en.liberapay.com/pkgstore/donate" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-liberapay -->
+
+<!-- modal-patreon -->
+<div id="modal-patreon" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Patreon</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">z1729 Factory</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="z1729" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success disabled" href="https://patreon.com/z1729" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">MARKETPLACE</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="marketplace" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success disabled" href="https://patreon.com/marketplace" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg">Package Store</div>
+          <div class="col-lg">
+            <div class="input-group">
+              <input class="form-control" type="text" value="pkgstore" readonly/>
+              <div class="input-group-append">
+                <a class="btn btn-success disabled" href="https://patreon.com/pkgstore" role="button" target="_blank">
+                  <i class="fas fa-donate fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-patreon -->
+
+<!-- modal-bitcoin -->
+<div id="modal-bitcoin" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Bitcoin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">
+            <div class="d-flex justify-content-center">
+              <figure class="figure d-block">
+                <canvas id="bitcoin-wallet-qr" data-wallet="bc1q855dt7p8mtd74yw96vvu93wy59j0fl8gaqh62h"></canvas>
+              </figure>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">BTC</span>
+              </div>
+              <input id="bitcoin-wallet" class="form-control" type="text" value="bc1q855dt7p8mtd74yw96vvu93wy59j0fl8gaqh62h" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#bitcoin-wallet">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-bitcoin -->
+
+<!-- modal-ethereum -->
+<div id="modal-ethereum" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Ethereum</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">
+            <div class="d-flex justify-content-center">
+              <figure class="figure d-block">
+                <canvas id="ethereum-wallet-qr" data-wallet="0x7252D91B61E18eDE4c8ec43a0EE7F1dFD17542ab"></canvas>
+              </figure>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">ETH</span>
+              </div>
+              <input id="ethereum-wallet" class="form-control" type="text" value="0x7252D91B61E18eDE4c8ec43a0EE7F1dFD17542ab" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#ethereum-wallet">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-ethereum -->
+
+<!-- modal-monero -->
+<div id="modal-monero" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title text-truncate">Monero</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <div class="col-lg">
+            <div class="d-flex justify-content-center">
+              <figure class="figure d-block">
+                <canvas id="monero-wallet-qr" data-wallet="48Q1zEztoECNyijSoQVhHC12LaxzNLPrhBgwGdM2847QY8ayusQ6XBjCD9hgeQk2LLUKbBvC5yKxDDmzkGvGyMGE9o95YkR"></canvas>
+              </figure>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">XMR</span>
+              </div>
+              <input id="monero-wallet" class="form-control" type="text" value="48Q1zEztoECNyijSoQVhHC12LaxzNLPrhBgwGdM2847QY8ayusQ6XBjCD9hgeQk2LLUKbBvC5yKxDDmzkGvGyMGE9o95YkR" readonly/>
+              <div class="input-group-append">
+                <button class="btn btn-primary ext-clipboard" data-clipboard-target="#monero-wallet">
+                  <i class="fas fa-copy fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal-monero -->
+
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1/build/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/theme.min.js"></script>
+<!-- / scripts -->
+</body>
+</html>
